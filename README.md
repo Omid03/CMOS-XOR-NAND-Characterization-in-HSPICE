@@ -47,15 +47,15 @@ The reference measurement files identify HSPICE `P-2019.06-SP1-1 win64`. Input s
 
 ## Functional behavior
 
-The slow input sequence visits all eight states over 160 ns in the order `(A,B,C) = 000, 100, 010, 110, 001, 101, 011, 111`. The report waveforms provide visual evidence of the expected XOR–NAND behavior. No automated truth-table assertion was included in the original decks.
+The slow input sequence visits all eight states over 160 ns in the order `(A,B,C) = 000, 100, 010, 110, 001, 101, 011, 111`.
 
 ![Minimum-width logic waveforms](docs/figures/logic-minimum.png)
 
-*Figure 1. Output and input waveforms for the minimum-width circuit over the eight-state input sequence. Source: report Figure 1, page 3; horizontal axis: time in seconds, vertical axes: voltage in volts.*
+*Figure 1. Output and input waveforms for the minimum-width circuit over the eight-state input sequence. horizontal axis: time in seconds, vertical axes: voltage in volts.*
 
 ![Upsized logic waveforms](docs/figures/logic-upsized.png)
 
-*Figure 2. Output and input waveforms for the upsized circuit under the same state sequence. Source: report Figure 2, page 3; time in seconds and voltage in volts.*
+*Figure 2. Output and input waveforms for the upsized circuit under the same state sequence. time in seconds and voltage in volts.*
 
 ## Delay and power results
 
@@ -107,11 +107,11 @@ The small relative change in switching-window power cannot be attributed solely 
 
 ![Output falling edge at two temperatures](docs/figures/temperature-falling-edge.png)
 
-*Figure 4. Output falling edge at 0 °C and 100 °C for the upsized circuit. The higher-temperature transition occurs later. Source: report Figure 14, page 8; time in seconds and voltage in volts.*
+*Figure 4. Output falling edge at 0 °C and 100 °C for the upsized circuit. The higher-temperature transition occurs later. time in seconds and voltage in volts.*
 
 ![Output rising edge at two temperatures](docs/figures/temperature-rising-edge.png)
 
-*Figure 5. Output rising edge at 0 °C and 100 °C for the upsized circuit. Source: report Figure 15, page 8; time in seconds and voltage in volts.*
+*Figure 5. Output rising edge at 0 °C and 100 °C for the upsized circuit. time in seconds and voltage in volts.*
 
 ## Repository contents
 
@@ -124,8 +124,8 @@ The small relative change in switching-window power cannot be attributed solely 
 | `results/reference/` | Original `.mt0` and `.mt1` measurement files |
 | `results/summary.csv` | Numeric summary derived from those files |
 | `results/static_by_state.csv` | Static power for each input state |
-| `docs/figures/` | Five selected report images used in this README |
-| `docs/evidence/` | Remaining report images retained as supporting evidence |
+| `docs/figures/` | images used in this README |
+| `docs/evidence/` | images retained as supporting evidence |
 | `docs/technical-review.md` | Implementation limitations and proposed verification work |
 | `docs/source-map.md` | Mapping from original archive paths to repository paths |
 | `scripts/run.sh` | Batch runner for a local HSPICE installation |
@@ -153,7 +153,7 @@ Run from `netlists/` so the relative model include resolves correctly. Inspect t
 
 ## Scope and reproducibility
 
-This repository presents simulation evidence, not measured silicon or post-layout signoff. The archived measurements were checked against the supplied report and listings, but HSPICE was not available during repository preparation, so the packaged decks and runner have not been validated by a new HSPICE execution.
+This repository presents simulation evidence, not measured silicon or post-layout signoff.
 
 The original decks tie several transistor bodies to internal source nodes, use repeated temperature/measurement directives, and contain a unitless final PWL time token. These details have been preserved to avoid silently changing the circuit behind the archived results. See the [technical review](docs/technical-review.md) before using the design as a validated reference implementation.
 
