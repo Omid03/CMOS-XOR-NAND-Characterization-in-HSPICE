@@ -1,4 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=0
-.TITLE 'q1_b:tpd'
- tphl             tplh             temper           alter#          
-  1.429e-10        8.400e-11        100.0000        1               

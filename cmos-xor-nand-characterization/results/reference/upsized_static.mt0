@@ -1,8 +1,0 @@
-$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=0
-.TITLE 'q1_b:static power'
- avgpower         static1          static2          static3         
- static4          static5          static6          static7         
- static8          temper           alter#          
-  1.049e-06        4.728e-11        6.773e-09        4.717e-09      
-  2.506e-08        3.253e-09        4.007e-09        4.346e-09      
-  2.452e-08         25.0000        1               
