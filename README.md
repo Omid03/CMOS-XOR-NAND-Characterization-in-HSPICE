@@ -126,8 +126,6 @@ The small relative change in switching-window power cannot be attributed solely 
 | `results/static_by_state.csv` | Static power for each input state |
 | `docs/figures/` | images used in this README |
 | `docs/evidence/` | images retained as supporting evidence |
-| `docs/technical-review.md` | Implementation limitations and proposed verification work |
-| `docs/source-map.md` | Mapping from original archive paths to repository paths |
 | `scripts/run.sh` | Batch runner for a local HSPICE installation |
 | `runs/` | Generated local outputs, excluded from version control |
 
