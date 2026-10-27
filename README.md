@@ -133,7 +133,7 @@ The small relative change in switching-window power cannot be attributed solely 
 
 ## Running the simulations
 
-Use a local HSPICE installation and place the original compatible model at `models/mm018.l`. The model is not bundled; see [model requirements](models/README.md).
+Use a local HSPICE installation and place the original compatible model at `models/mm018.l`. The model is not bundled.
 
 From the repository root, run:
 
@@ -155,6 +155,6 @@ Run from `netlists/` so the relative model include resolves correctly. Inspect t
 
 This repository presents simulation evidence, not measured silicon or post-layout signoff.
 
-The original decks tie several transistor bodies to internal source nodes, use repeated temperature/measurement directives, and contain a unitless final PWL time token. These details have been preserved to avoid silently changing the circuit behind the archived results. See the [technical review](docs/technical-review.md) before using the design as a validated reference implementation.
+The original decks tie several transistor bodies to internal source nodes, use repeated temperature/measurement directives, and contain a unitless final PWL time token. These details have been preserved to avoid silently changing the circuit behind the archived results.
 
 Summary values use the precision available in `.mt0` and `.mt1`; report screenshots and `.lis` files may display additional digits. Device sizing and temperature were studied at the `tt` model section only. Process-corner sweeps, load sweeps, Monte Carlo analysis, and exhaustive timing characterization were not performed.
