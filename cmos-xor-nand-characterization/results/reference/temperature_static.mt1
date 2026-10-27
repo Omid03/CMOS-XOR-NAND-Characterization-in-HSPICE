@@ -1,0 +1,8 @@
+$DATA1 SOURCE='HSPICE' VERSION='P-2019.06-SP1-1 win64' PARAM_COUNT=0
+.TITLE 'q2:static power'
+ avgpower         static1          static2          static3         
+ static4          static5          static6          static7         
+ static8          temper           alter#          
+  1.071e-06        1.535e-09        8.748e-09        6.026e-09      
+  2.740e-08        5.309e-09        5.590e-09        5.875e-09      
+  2.724e-08        100.0000        1               
